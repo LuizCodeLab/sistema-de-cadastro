@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permite uma boa visualização em dispositivos diferentes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - Lojas Brincos e Companhia</title>
+</head>
+
+<body>
+
+    <!-- Título principal do formulário -->
+    <h1>Cadastro de Novos Colaboradores</h1>
+
+    <p>Lojas Brincos e Companhia</p>
+
+    <!--
+        Formulário para coletar os dados.
+        O método POST será utilizado para enviar as informações.
+        O arquivo processaCadastro.php receberá os dados.
+    -->
+    <form method="post" action="processaCadastro.php">
+
+        <!-- Campo: Nome completo -->
+        <label for="nome1">Nome completo:</label>
+        <input
+            type="text"
+            name="nome1"
+            id="nome1"
+            placeholder="Digite seu nome completo"
+            required
+        >
+
+        <br><br>
+
+        <!-- Campo: Idade -->
+        <label for="idade2">Idade:</label>
+        <input
+            type="number"
+            name="idade2"
+            id="idade2"
+            placeholder="Digite sua idade"
+            required
+        >
+
+        <br><br>
+
+        <!-- Campo: Profissão -->
+        <label for="profissao3">Profissão:</label>
+        <input
+            type="text"
+            name="profissao3"
+            id="profissao3"
+            placeholder="Digite sua profissão"
+            required
+        >
+
+        <br><br>
+
+        <!-- Campo: Salário pretendido -->
+        <label for="salario4">Salário pretendido:</label>
+        <input
+            type="number"
+            name="salario4"
+            id="salario4"
+            placeholder="Digite o salário pretendido"
+            step="0.01"
+            required
+        >
+
+        <br><br>
+
+        <!-- Campo: Telefone para contato -->
+        <label for="telefone5">Telefone:</label>
+        <input
+            type="tel"
+            name="telefone5"
+            id="telefone5"
+            placeholder="Digite o telefone"
+            required
+        >
+
+        <br><br>
+
+        <!--
+            Campo de texto longo para o candidato
+            informar sua experiência anterior.
+        -->
+        <label for="experiencia6">Experiência anterior:</label>
+        <br>
+
+        <textarea
+            name="experiencia6"
+            id="experiencia6"
+            rows="6"
+            cols="50"
+            placeholder="Descreva sua experiência profissional anterior"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <!-- Botão responsável por enviar o formulário -->
+        <button type="submit">Enviar cadastro</button>
+
+    </form>
+
+</body>
+
+</html>
